@@ -6,7 +6,7 @@ resource "azurerm_resource_group" "storage_for_blob" {
 resource "azurerm_storage_account" "storage_for_blob" {
   name                     = var.storage_name_account
   
-  resource_group_name      = azurerm_resource_group.storage_for_blobe.name
+  resource_group_name      = azurerm_resource_group.storage_for_blob.name
   location                 = azurerm_resource_group.storage_for_blob.location
   
   account_tier             = var.storage_account_tier
